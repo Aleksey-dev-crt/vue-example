@@ -20,11 +20,6 @@ import { mapState, mapMutations } from 'vuex';
 import placeholderImg from '../assets/placeholder-image.png';
 
 export default {
-	data() {
-		return {
-			isActive: false,
-		};
-	},
 	methods: {
 		...mapMutations({
 			setCurrentUser: 'setCurrentUser',
@@ -35,7 +30,6 @@ export default {
 		userClickHandler(e) {
 			const currentUser = e.currentTarget.lastChild.firstChild.textContent;
 			this.$store.commit('setCurrentUser', currentUser);
-			this.isActive = true;
 		},
 	},
 	computed: {

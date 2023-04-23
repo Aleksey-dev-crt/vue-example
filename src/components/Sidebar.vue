@@ -36,7 +36,6 @@ export default {
 	},
 	methods: {
 		...mapMutations({
-			setUsers: 'setUsers',
 			setSearchQuery: 'setSearchQuery',
 		}),
 		...mapActions({
