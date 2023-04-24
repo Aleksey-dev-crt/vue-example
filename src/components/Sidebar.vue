@@ -25,7 +25,6 @@
 
 <script>
 import { mapState, mapActions, mapMutations } from 'vuex';
-import placeholderImg from '@/assets/placeholder-image.png';
 import Preloader from '@/components/Preloader.vue';
 import UserList from '@/components/UserList.vue';
 
@@ -41,10 +40,6 @@ export default {
 		...mapActions({
 			getUsers: 'getUsers',
 		}),
-
-		photoPlaceholder(e) {
-			e.target.src = placeholderImg;
-		},
 
 		inputHandler(e) {
 			if (e.key === 'Enter' && e.target.value) {
