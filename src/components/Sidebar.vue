@@ -3,7 +3,7 @@
 		<h2 class="sidebar__search-title">Поиск сотрудников</h2>
 		<input
 			:value="searchQuery"
-			@keyup="inputHandler"
+			@keyup.enter="inputHandler"
 			class="sidebar__search-input"
 			type="text"
 			placeholder="Введите id или имя"
@@ -42,7 +42,7 @@ export default {
 		}),
 
 		inputHandler(e) {
-			if (e.key === 'Enter' && e.target.value) {
+			if (e.target.value) {
 				this.$store.commit('setSearchQuery', e.target.value);
 				this.getUsers();
 			}

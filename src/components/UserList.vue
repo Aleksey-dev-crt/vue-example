@@ -17,7 +17,7 @@
 
 <script>
 import { mapState, mapMutations } from 'vuex';
-import placeholderImg from '../assets/placeholder-image.png';
+import placeholderImg from '@/assets/placeholder-image.png';
 
 export default {
 	methods: {
