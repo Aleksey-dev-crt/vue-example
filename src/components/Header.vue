@@ -1,7 +1,7 @@
 <template>
 	<header class="header">
-		<h1 class="header__title">Longevity InTime BioTech</h1>
-		<p class="header__user">User</p>
+		<h1 class="header__title">Жилфонд</h1>
+		<p class="header__user">Пользователь</p>
 	</header>
 </template>
 
